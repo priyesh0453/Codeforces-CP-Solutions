@@ -2,6 +2,21 @@
 #include <string>
 using namespace std;
 
+int abbreviate();
+
+int main()
+{
+    int n;
+    cin >> n;
+    
+    while(n--)
+    {
+        abbreviate();
+    }
+    
+    return 0;
+}
+
 int abbreviate()
 {
     string word, abbreviation;
@@ -14,19 +29,6 @@ int abbreviate()
     {
         abbreviation = word[0] + to_string(length - 2) + word[(length - 1)];
         cout << abbreviation << endl;     
-    }
-    
-    return 0;
-}
-
-int main()
-{
-    int n;
-    cin >> n;
-    
-    while(n--)
-    {
-        abbreviate();
     }
     
     return 0;
